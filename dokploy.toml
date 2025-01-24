@@ -1,0 +1,10 @@
+providers = ["docker", "python"]
+
+[phases.build]
+cmds = [
+    "pip install -r requirements.txt",
+    "echo building!"
+]
+
+[start]
+cmd = "python3 app.py"
